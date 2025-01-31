@@ -1,0 +1,129 @@
+.habits-calendar-container {
+  max-width: 900px;
+  margin: 0 auto;
+  font-family: "Quicksand", sans-serif;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.habits-calendar {
+  margin-bottom: 20px;
+}
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 5px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.calendar-day {
+  border: 1px solid #e0e0e0;
+  padding: 10px;
+  min-height: 80px;
+  position: relative;
+  background-color: #f9f9f9;
+  transition: background-color 0.3s ease;
+}
+.day-number {
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 5px;
+}
+.calendar-day.has-habits {
+  background-color: #fff3e0;
+}
+.habit-indicators {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3px;
+  margin-top: 5px;
+}
+.habit-indicator {
+  width: 22px;
+  height: 22px;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: bold;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+.calendar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  color: #ffa500;
+}
+.calendar-header button {
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: #ffa500;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+.calendar-header button:hover {
+  color: #ff8c00;
+}
+.calendar-weekdays {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #666;
+}
+.habits-legend {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+}
+.habits-legend h3 {
+  margin-bottom: 15px;
+  color: #ffa500;
+}
+.habit-legend-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.habit-legend-dot {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.habit-legend-name {
+  font-size: 16px;
+  color: #333;
+}
+
+/* Add these styles to your existing Calendar.css */
+
+.calendar-day.today {
+  background-color: #fff3e0;
+  border: 2px solid #ffa500;
+  border-radius: 50%;
+  font-weight: bold;
+}
+
+.calendar-day.today .day-number {
+  color: #ffa500;
+  font-weight: bold;
+}
+
+.no-habits-message {
+  text-align: center;
+  padding: 1rem;
+  color: #666;
+  background-color: #f8f8f8;
+  border-radius: 8px;
+  margin-top: 1rem;
+  font-style: italic;
+}

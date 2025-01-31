@@ -1,0 +1,210 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap");
+.text-orange {
+  color: orange !important;
+}
+.bg-orange {
+  background-color: orange !important;
+}
+
+.nav-link {
+  color: orange;
+  text-decoration: none;
+  font-family: "Quicksand";
+}
+
+.active-link {
+  color: #ffa500;
+  font-weight: bold;
+  border-bottom: 2px solid orange;
+}
+
+
+.logo {
+  font-family: "Dancing Script";
+}
+
+body {
+  margin: 0;
+  font-family: "Quicksand" !important;
+  font-size: 22px;
+}
+
+.home-section {
+  background-color: orange;
+  background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 320'><path fill='%23ffffff' fill-opacity='1' d='M0,256L80,245.3C160,235,320,213,480,181.3C640,149,800,107,960,106.7C1120,107,1280,149,1360,170.7L1440,192L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z'></path></svg>");
+  background-size: cover;
+  color: white;
+  font-family: "Quicksand";
+  font-size: 18px;
+}
+
+.text-orange {
+  color: orange;
+}
+
+.transform-section {
+  background-color: #f8f9fa; /* Light gray background for contrast */
+  font-family: "Quicksand";
+}
+
+.transform-section h1 {
+  color: orange; /* Secondary color for the title */
+}
+
+.transform-section h3 {
+  color: #6c757d; /* Bootstrap text-muted equivalent for subtitle */
+}
+
+.progress-section {
+  background-color: #ffffff; /* White background for clean look */
+  font-family: "Quicksand";
+}
+
+.progress-section h2 {
+  color: orange; /* Secondary color for the title */
+}
+
+.progress-section img {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow to images */
+}
+
+.progress-section h5 {
+  color: black; /* Primary color for feature titles */
+}
+
+.progress-section p {
+  color: #6c757d; /* Muted text for descriptions */
+}
+
+.progress-section .row {
+  display: flex;
+  align-items: stretch; /* Ensures that columns are of equal height */
+}
+
+.progress-section .col-md-4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.progress-section img {
+  width: 80%;
+  max-width: 200px;
+  height: 200px; /* Fixed height for equal image sizes */
+  object-fit: cover; /* Ensures the image covers the entire area */
+  border-radius: 8px;
+  margin: 0 auto;
+}
+
+.progress-section .col-md-4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+footer a {
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+footer p{
+  font-family: "Quicksand";
+  color: black;
+
+}
+footer a:hover {
+  color: #ff7f50; /* Orange color on hover */
+}
+
+footer i {
+  font-size: 1.5rem;
+  color: black;
+
+}
+
+.bg-footer{
+  background-color: #ffffff;
+}
+
+
+
+/* Loading Screen Styles */
+.loading-screen {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f8f9fa; /* Light grey background for a softer look */
+  overflow: hidden;
+  position: relative;
+  z-index: 1000;
+}
+
+.loading-spinner {
+  border: 8px solid rgba(255, 165, 0, 0.7); /* Semi-transparent orange border */
+  border-top: 8px solid rgba(255, 255, 255, 0.7); /* Semi-transparent white border for the top */
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  animation: spin 1.5s linear infinite; /* Spin animation */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  transition: transform 0.3s ease-in-out; /* Smooth transition on hover */
+}
+
+.loading-spinner:hover {
+  transform: scale(1.1); /* Slight enlargement on hover */
+}
+
+.loading-text {
+  margin-top: 20px;
+  font-size: 1.5rem;
+  color: #ffa500; /* Orange text */
+  font-weight: bold;
+  animation: fade 2s infinite; /* Fade animation */
+  letter-spacing: 1px; /* Spacing between letters for better readability */
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  transition: color 0.3s ease-in-out; /* Smooth transition on hover */
+}
+
+.loading-text:hover {
+  color: #ff8c00; /* Darker orange on hover */
+}
+
+/* Spin Animation */
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Fade Animation */
+@keyframes fade {
+  0% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}
+
+/* Optional: Add a subtle background gradient */
+.loading-screen::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(45deg, rgba(255, 165, 0, 0.1), rgba(255, 255, 255, 0.1));
+  pointer-events: none; /* Ensure it doesn't interfere with interactions */
+  z-index: -1;
+}
