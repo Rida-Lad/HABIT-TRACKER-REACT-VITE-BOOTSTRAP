@@ -79,12 +79,6 @@ const Home = () => {
                 motivated, track your progress, and achieve your goals
                 effortlessly.
               </h3>
-              <button
-                className="btn btn-outline-danger mt-4 fw-bold"
-                onClick={() => navigate("/habits")}
-              >
-                Learn More
-              </button>
             </motion.div>
             <motion.div
               className="col-md-6 text-center"
