@@ -1,4 +1,4 @@
-# 📊 HabitForge Analytics Dashboard
+# 📊 Habit Tracker App
 
 <div align="center">
   <img src="https://img.shields.io/badge/React-61DAFB?logo=react&logoColor=black&style=for-the-badge" alt="React">
@@ -22,23 +22,6 @@ HabitForge is a comprehensive habit tracking application designed to help users 
 - Detailed Habit Completion Percentages
 - Customizable Habit Management
 
-## 🚀 Quick Start
-
-1. Clone the repository
-```bash
-git clone <your-repo-url>
-```
-
-2. Install dependencies
-```bash
-npm install
-npm install react-chartjs-2 chart.js bootstrap
-```
-
-3. Run the application
-```bash
-npm start
-```
 
 ## 🛠️ Core Technologies
 
@@ -63,19 +46,6 @@ npm start
 - Modular Component Architecture
 - Intuitive User Interface
 
-## 🔍 Implementation Details
-
-### Progress Tracking
-```javascript
-const calculateCompletionPercentage = (habit) => {
-  const totalDays = Math.ceil(
-    (new Date(habit.endDate) - new Date(habit.startDate)) / 
-    (1000 * 60 * 60 * 24) + 1
-  );
-  const completedDays = Object.keys(completionStatus[habit.habitName] || {}).length;
-  return ((completedDays / totalDays) * 100).toFixed(2);
-};
-```
 
 
 ## 🤝 Contributing
